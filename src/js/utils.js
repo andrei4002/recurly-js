@@ -162,10 +162,12 @@ R.flattenErrors = function(obj, attr) {
 
     /*
      * erroneous code, commented out here in case similar logic is needed later
+    
+     */
+    
     if($.inArray(baseErrorKeys, attr)) {
       return [obj];
     }
-     */
 
     return ['' + attr + ' ' + obj];
   }
