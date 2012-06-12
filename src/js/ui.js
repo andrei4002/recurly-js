@@ -140,7 +140,7 @@ var preFillMap = {
   , country:        '.billing_info > .address > .country > select'
   , city:           '.billing_info > .address > .city > input'
   , state:          '.billing_info > .address > .state_zip > .state > input'
-  , zip:            '.billing_info > .address > .state_zip > .zip > input'
+  , zip:            '.billing_info > .credit_card > .zip > input'
   , vatNumber:      '.billing_info > .vat_number > input'
 
   , cardNumber:     '.billing_info  .card_number > input'

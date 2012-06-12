@@ -10,16 +10,7 @@
   .field.last_name
     .placeholder Last Name 
     input(type="text")
-
-  .card_cvv
-    .field.card_number
-      .placeholder Credit Card Number  
-      input(type="text")
-
-    .field.cvv
-      .placeholder CVV 
-      input(type="text")
-
+    
   .field.expires
     .title Expires 
     .month
@@ -27,6 +18,20 @@
         include months.jade 
     .year
       select
+
+  .field.card_number
+    .placeholder Credit Card Number  
+    input(type="text")
+
+  .field.cvv
+    .placeholder CVV 
+    input(type="text")
+    
+  .field.zip
+    .placeholder Zip/Postal
+    input(type="text")
+
+  
 
 .address
   .field.address1
@@ -46,10 +51,6 @@
       .placeholder State/Province
       input(type="text")
 
-    .field.zip
-      .placeholder Zip/Postal
-      input(type="text")
-  
   .field.country
     select
       include countries.jade
