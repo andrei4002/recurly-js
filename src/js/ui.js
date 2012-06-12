@@ -202,12 +202,12 @@ function initCommonForm($form, options) {
     var $input = $(this);
     var $li = $(this).parent(); 
 
-    if($input.val().length > 0) {
-      $li.find('.placeholder').hide();
-    }
-    else {
-      $li.find('.placeholder').show();
-    }
+    //if($input.val().length > 0) {
+    //  $li.find('.placeholder').hide();
+    //}
+    //else {
+    //  $li.find('.placeholder').show();
+    //}
   });
 
 
@@ -220,9 +220,9 @@ function initCommonForm($form, options) {
   });
 
   $form.delegate('input', 'keydown', function(e) {
-    if(e.keyCode >= 48 && e.keyCode <= 90) {
-      $(this).parent().find('.placeholder').hide();
-    }
+    //if(e.keyCode >= 48 && e.keyCode <= 90) {
+    //  $(this).parent().find('.placeholder').hide();
+    //}
   });
   
   preFillValues($form, options, preFillMap);
